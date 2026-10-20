@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>鼻腔建模 · 工程工作台</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="pro.css">
+<script src="pro.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="brand">鼻腔建模<span class="brand-pro">工程工作台</span></div>
+  <div class="top-status" id="top-status">
+    <a class="chip nav" href="/workspace/index.html#import" target="_blank" rel="noopener"
+       title="CT 序列导入（DICOM 文件夹 / ZIP / NIfTI）——在数据页上传，病例自动回流本工作台患者树">CT 导入 ↗</a>
+    <a class="chip nav" href="/progress/index.html" target="_blank" rel="noopener"
+       title="项目级进度总览（任务/里程碑/证据索引）">进度总览 ↗</a>
+    <a class="chip nav" href="/workspace/progress-cards.html" target="_blank" rel="noopener"
+       title="任务卡逐卡状态（构建产物）">任务卡进度 ↗</a>
+    <span class="chip warn" title="本工作台全部患者相关产出的统一临床状态">未临床复核</span>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="tree-panel">
+    <div class="panel-title">患者项目 <span class="muted" id="proj-count"></span></div>
+    <ul class="tree" id="proj-tree"></ul>
+    <div class="tree-legend">✓ 有产物 · ✗ 失败 · ⊘ 上游失效 · … 待上游 · ◌ 未开始 · ◇ 工作台无记录</div>
+  </aside>
+
+  <main class="view-panel">
+    <div class="view-tabs" id="view-tabs"></div>
+    <div class="view-body" id="view-body"></div>
+  </main>
+
+  <aside class="prop-panel">
+    <div class="panel-title">属性</div>
+    <div id="prop-body"><p class="muted">在左侧选择项目或节点，这里显示其真实参数。</p></div>
+  </aside>
+</div>
+
+</body>
+</html>

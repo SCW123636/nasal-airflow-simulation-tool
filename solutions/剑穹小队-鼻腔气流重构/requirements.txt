@@ -1,0 +1,38 @@
+# 依赖
+
+## 几何链路（DICOM → STL）
+
+```
+pydicom>=2.4
+SimpleITK>=2.3
+numpy>=1.24
+scipy>=1.10
+vtk>=9.2
+```
+
+## 分割
+
+```
+TotalSegmentator>=2.3
+```
+
+首次运行 `ts_nasal_seg.py` 会下载 `head_glands_cavities` 任务权重（约 200 MB）。脚本默认走 `hf-mirror.com` 镜像；海外网络可自行改写 `HF_MIRROR`。
+
+TotalSegmentator 以可执行文件形式被调用（`$NASAL_VENV/Scripts/TotalSegmentator.exe`），因此需要它装在**独立的 venv** 里，并用 `NASAL_VENV` 指向该 venv 根目录。若直接用当前 Python 的解释器，可把 `NASAL_VENV` 设为其所在环境目录。
+
+## 体网格
+
+```
+netgen-mesher>=6.2
+```
+
+## CFD（不通过 pip 安装）
+
+- WSL2 + Ubuntu 22.04
+- OpenFOAM v1912（原生安装，非 Docker）
+- case 目录必须建在 native Linux 文件系统（如 `~/cases`），**不要**建在 `/mnt/c` 下
+
+## 可选
+
+- matplotlib（部分诊断脚本出图用）
+- 中文字体 `C:/Windows/Fonts/msyh.ttc`（缺失时脚本自动跳过中文标签，不报错）

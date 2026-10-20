@@ -1,0 +1,33 @@
+MIT License
+
+Copyright (c) 2026 剑穹小队 (Jianqiong Team)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+医疗用途免责声明 / Medical Disclaimer
+
+本软件为研究原型与临床辅助分析工具，不构成医疗器械，不得单独用于诊断、
+决定手术方案或鉴定医疗责任。任何输出结果均须由具备资质的临床医生结合
+完整检查与患者实际情况判断。本项目所有产物的临床状态标注为：
+
+    clinical_status: generalisation_test_only_no_human_review
+
+即：仅在泛化测试场景下产出，未经人体复核，不可作为临床结论。

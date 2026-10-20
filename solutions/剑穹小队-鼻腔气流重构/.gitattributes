@@ -1,0 +1,5 @@
+# 统一 LF：shell 脚本若被转成 CRLF，在 WSL 里会报 bad interpreter
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.json text eol=lf
