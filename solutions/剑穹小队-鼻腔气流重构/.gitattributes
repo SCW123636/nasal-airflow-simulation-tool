@@ -3,3 +3,9 @@
 *.sh text eol=lf
 *.py text eol=lf
 *.json text eol=lf
+
+# 以下按字节原样保存，禁止任何换行/编码归一化：
+# vendor/source.json 记录了 three.js 各文件的 sha256，一旦被 text 归一化就对不上账。
+src/viewer/vendor/** -text
+src/viewer/t058_*.json -text
+src/viewer/pro/artifacts/** -text

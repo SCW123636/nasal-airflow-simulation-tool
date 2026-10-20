@@ -1,0 +1,85 @@
+{
+ "schema": "t058_cut_viewer/v1",
+ "title": "T-058 切割结果三维检视 · 解剖斜切",
+ "coordinate_system": "LPS",
+ "unit": "mm",
+ "display_geometry_only": true,
+ "cfd_ready": false,
+ "patient_cfd_results": 0,
+ "clinical_status": "generalisation_test_only_no_human_review",
+ "cut_rule": "outlet perpendicular to the fitted local airway axis; lowest point 0.5 mm above the bottom voxel centre (same anchor rule as the retired axial cut)",
+ "cases": [
+  {
+   "id": "b01",
+   "label": "b01 · 解剖斜切",
+   "type": "patient_preview",
+   "mesh_url": "./t058_b01.json",
+   "note": "T-058 解剖斜切（出口垂直气道轴）几何检视；非 CFD 结果。",
+   "meta": {
+    "decision": "auto_pass",
+    "nostril_L": 80.08,
+    "nostril_R": 80.08,
+    "outlet": 208.46,
+    "outlet_axial": 148.93,
+    "tilt_deg": 23.71,
+    "drift_xy_mm": [
+     -0.22,
+     -3.45
+    ],
+    "fit_height_mm": 10.0,
+    "z_anchor_mm": -82.579,
+    "z_bottom_mm": -85.71700286865234,
+    "volume_mm3": 27534.3,
+    "removed_mm3": 722.8
+   }
+  },
+  {
+   "id": "b02",
+   "label": "b02 · 解剖斜切",
+   "type": "patient_preview",
+   "mesh_url": "./t058_b02.json",
+   "note": "T-058 解剖斜切（出口垂直气道轴）几何检视；非 CFD 结果。",
+   "meta": {
+    "decision": "auto_pass",
+    "nostril_L": 80.15,
+    "nostril_R": 80.22,
+    "outlet": 84.57,
+    "outlet_axial": 91.98,
+    "tilt_deg": 24.36,
+    "drift_xy_mm": [
+     -0.33,
+     -4.44
+    ],
+    "fit_height_mm": 10.0,
+    "z_anchor_mm": -90.547,
+    "z_bottom_mm": -92.78700256347656,
+    "volume_mm3": 21127.9,
+    "removed_mm3": 296.9
+   }
+  },
+  {
+   "id": "b15",
+   "label": "b15 · 解剖斜切",
+   "type": "patient_preview",
+   "mesh_url": "./t058_b15.json",
+   "note": "T-058 解剖斜切（出口垂直气道轴）几何检视；非 CFD 结果。",
+   "meta": {
+    "decision": "auto_pass",
+    "nostril_L": 80.04,
+    "nostril_R": 80.06,
+    "outlet": 125.85,
+    "outlet_axial": 111.0,
+    "tilt_deg": 24.75,
+    "drift_xy_mm": [
+     1.51,
+     -3.21
+    ],
+    "fit_height_mm": 7.5,
+    "z_anchor_mm": -55.962,
+    "z_bottom_mm": -58.8380012512207,
+    "volume_mm3": 21324.9,
+    "removed_mm3": 435.2
+   }
+  }
+ ]
+}

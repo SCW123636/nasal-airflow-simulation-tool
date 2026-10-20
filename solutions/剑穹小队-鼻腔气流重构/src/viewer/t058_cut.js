@@ -5,7 +5,7 @@
  * LPS → 显示坐标 (x, z, -y)：与 viewer.js 的 lpsToView 一致。
  */
 import * as THREE from 'three';
-import { OrbitControls } from '/viewer/vendor/OrbitControls.js';
+import { OrbitControls } from '/vendor/OrbitControls.js';
 
 const $ = id => document.getElementById(id);
 const COLORS = {

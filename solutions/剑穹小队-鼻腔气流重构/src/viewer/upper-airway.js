@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {OrbitControls} from '/viewer/vendor/OrbitControls.js';
+import {OrbitControls} from '/vendor/OrbitControls.js';
 
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);

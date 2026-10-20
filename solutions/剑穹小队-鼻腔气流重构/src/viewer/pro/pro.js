@@ -128,14 +128,14 @@ async function loadJobs() {
 }
 async function loadMetrics() {
   try {
-    S.metrics = await jget('/workspace/pro/patient_metrics.json');
+    S.metrics = await jget('/pro/patient_metrics.json');
   } catch (e) { S.metrics = null; }
 }
 /* 已核验流线产物清单（T-057）：今天的患者求解走 WSL 直跑，job 体系里没有 streamlines.html，
    若无此回退则「流线」页永远空白。清单 = 搬运模式（同 patient_metrics.json），不伪造 job 记录。 */
 async function loadStreamlines() {
   try {
-    const d = await jget('/workspace/pro/streamlines_manifest.json');
+    const d = await jget('/pro/streamlines_manifest.json');
     S.streamlines = (d.items || []);
   } catch (e) { S.streamlines = []; }
 }
@@ -144,7 +144,7 @@ async function loadStreamlines() {
    清单只挂产物 URL 与出处；数值一律以 patient_metrics.json 为准。 */
 async function loadProjects() {
   try {
-    const d = await jget('/workspace/pro/patient_projects.json');
+    const d = await jget('/pro/patient_projects.json');
     S.projects = (d.items || []);
   } catch (e) { S.projects = []; }
 }
@@ -504,7 +504,7 @@ function renderComparePair() {
     if (sb) q.set('sb', sb);
     q.set('embedded', '1');
     const f = document.createElement('iframe');
-    f.src = '/workspace/t058_cmp.html?' + q.toString();
+    f.src = '/t058_cmp.html?' + q.toString();
     f.title = '双侧三维对比（解剖斜切）';
     stage.append(f);
   } else {

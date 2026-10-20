@@ -16,7 +16,7 @@
  * 顶点色按速度映射流线页（T-057）同款色带——颜色只留给数据，符合 tokens.css 纪律。
  */
 import * as THREE from 'three';
-import { OrbitControls } from '/viewer/vendor/OrbitControls.js';
+import { OrbitControls } from '/vendor/OrbitControls.js';
 
 const $ = id => document.getElementById(id);
 const Q = new URLSearchParams(location.search);

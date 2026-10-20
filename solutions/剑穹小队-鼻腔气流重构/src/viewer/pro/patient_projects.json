@@ -3,7 +3,7 @@
   "note": "工作台「患者即项目」的已核验搬运清单。本项目的患者求解在工作台外（WSL 直跑 simpleFoam）完成，job 体系里没有对应记录；本清单只负责「哪个患者、挂哪张图、出处是谁」，不写任何数值——数值一律以 patient_metrics.json 为准，不实时推算、不伪造 job 记录。与 streamlines_manifest.json 同一搬运模式。",
   "generated": "2026-10-16",
   "revision": "2026-10-16 11:5x 建立。T-058 解剖斜切（出口垂直局部气道轴）三例全链 b15/b01/b02 收卡后，把解剖切三维检视页接入三维检查视图；b15 复用 jobs 派生的 b15_engineering 条目就地富化（不重复建项目），b01/b02 新增。",
-  "viewer_note": "viewer 指向 T-058 解剖切检视页（/workspace/t058_cut.html），带 ?case= 指定默认病例、?sl= 叠加该例已核验流线（T-064：模型+流线同一 3D 视口）；工作台三维检查视图会自动追加 ?embedded=1。该页内仍可切到三例中任意一例，切到无流线的病例时诚实降级为只有模型；切换会回传工作台同步患者树选择。",
+  "viewer_note": "viewer 指向 T-058 解剖切检视页（/t058_cut.html），带 ?case= 指定默认病例、?sl= 叠加该例已核验流线（T-064：模型+流线同一 3D 视口）；工作台三维检查视图会自动追加 ?embedded=1。该页内仍可切到三例中任意一例，切到无流线的病例时诚实降级为只有模型；切换会回传工作台同步患者树选择。",
   "items": [
     {
       "case_id": "b15_engineering",
@@ -12,8 +12,8 @@
       "viewer_case": "b15",
       "domain": "extended（鼻+鼻咽+口咽）· 出口 = 垂直局部气道轴（解剖切）",
       "artifacts": {
-        "viewer": "/workspace/t058_cut.html?case=b15",
-        "streamlines": "/workspace/pro/artifacts/streamlines_b15_anat_t600.html"
+        "viewer": "/t058_cut.html?case=b15",
+        "streamlines": "/pro/artifacts/streamlines_b15_anat_t600.html"
       },
       "source": "T-058 全链（几何=解剖斜切；netgen maxh1.0 + simpleFoam 600 步 S-A）",
       "clinical_status": "generalisation_test_only_no_human_review",
@@ -26,8 +26,8 @@
       "viewer_case": "b01",
       "domain": "extended（鼻+鼻咽+口咽）· 出口 = 垂直局部气道轴（解剖切）",
       "artifacts": {
-        "viewer": "/workspace/t058_cut.html?case=b01",
-        "streamlines": "/workspace/pro/artifacts/streamlines_b01_anat_t600.html"
+        "viewer": "/t058_cut.html?case=b01",
+        "streamlines": "/pro/artifacts/streamlines_b01_anat_t600.html"
       },
       "source": "T-058 全链（几何=解剖斜切；netgen maxh1.0 + simpleFoam 600 步 S-A）",
       "clinical_status": "generalisation_test_only_no_human_review",
@@ -40,8 +40,8 @@
       "viewer_case": "b02",
       "domain": "extended（鼻+鼻咽+口咽）· 出口 = 垂直局部气道轴（解剖切）",
       "artifacts": {
-        "viewer": "/workspace/t058_cut.html?case=b02",
-        "streamlines": "/workspace/pro/artifacts/streamlines_b02_anat_t600.html"
+        "viewer": "/t058_cut.html?case=b02",
+        "streamlines": "/pro/artifacts/streamlines_b02_anat_t600.html"
       },
       "source": "T-058 全链（几何=解剖斜切；netgen maxh1.0 + simpleFoam 600 步 S-A）",
       "clinical_status": "generalisation_test_only_no_human_review",

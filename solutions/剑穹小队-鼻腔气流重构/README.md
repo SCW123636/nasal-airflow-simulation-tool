@@ -110,10 +110,21 @@ python src/cfd/run_openfoam_case.py --surface <auto_placed.vtp> --config src/cfd
 
 ```bash
 cd src/viewer && python -m http.server 8769
-# 浏览器打开 http://127.0.0.1:8769/index.html
 ```
 
-`src/viewer/pro/artifacts/` 内嵌三例已核验的流线数据（base64 顶点 + 速度），无需重跑求解即可查看。
+浏览器打开 **`http://127.0.0.1:8769/t058_cut.html?case=b15`** —— 模型与流线在同一 3D 视口（页面左下角可切 b01 / b02；切到没有流线的病例时会自动只显示模型，不冒充）。
+
+| 入口 | 是什么 |
+|---|---|
+| `t058_cut.html?case=<b15\|b01\|b02>` | 三维检查（几何 + 开口 + 切除楔形 + 可选流线层），带 `&sl=<lines.json>` 叠加该例流线 |
+| `t058_cmp.html?a=b15&b=b02` | 双例并排，两侧共用相机轨道，可各自带 `&sa=` / `&sb=` 流线层 |
+| `pro/index.html` | 工程工作台：患者树、功能指标、三维检查同框、对比 |
+
+- **`src/viewer` 就是站点根**：所有页面用根绝对路径（`/vendor/...`、`/pro/...`），因此直接 `http.server` 起在本目录即可，不需要额外的反向代理或 `/workspace` 路由。若部署到子路径下，需同步改这些根路径。
+- 渲染栈已随仓库附带：`src/viewer/vendor/` 为 three.js **0.180.0**（`source.json` 记录 tarball 与各文件 sha256，MIT，见 `THREE_LICENSE.txt`），**看页面不需要联网**。
+- 几何数据 `t058_cut_data.json` + `t058_b<case>.json`（每例约 1.5 MB，抽稀显示网格），由 `outputs/T-058/build_cut_assets.py` 生成，带来源 sha256。
+- `src/viewer/pro/artifacts/` 内嵌三例已核验的流线数据（base64 顶点 + 速度），**无需重跑求解**即可查看；`.lines.json` 是给上面两个页面叠加用的坐标数据（LPS / mm）。
+- `src/viewer/index.html` 是本地七步处理控制台，依赖工作台后端路由（`/viewer/*`、`/api/*`），**静态部署下不可用**，与本目录里三个检视页无关。
 
 ## 五、与需求书的偏差
 

@@ -5,19 +5,19 @@
     {
       "id": "t058_b15_anat_t600",
       "label": "b15 · 口咽扩展域 · 解剖斜切 · time=600",
-      "url": "/workspace/pro/artifacts/streamlines_b15_anat_t600.html",
-      "lines_url": "/workspace/pro/artifacts/streamlines_b15_anat_t600.lines.json",
+      "url": "/pro/artifacts/streamlines_b15_anat_t600.html",
+      "lines_url": "/pro/artifacts/streamlines_b15_anat_t600.lines.json",
       "case_id": "b15_engineering",
       "domain": "extended（鼻+鼻咽+可见口咽）· 出口 = 解剖斜切⊥局部气道轴",
       "source": "T-058（源场 t058_chain_anat/b15，vtkStreamTracer，seed=7，每侧 60 种子）",
       "clinical_status": "generalisation_test_only_no_human_review",
-      "note": "★ 当前口径（2026-10-16 起）：源场 = **T-058 解剖斜切扩展域**（出口帽 126.89 mm² mesh / 125.85 opening、Δp 17.120 Pa、653,789 cells）。**取代** T-057 轴位切产物（出口 112.51 mm²、Δp 18.267 Pa；差 −6.28% 属**切面口径差非修正**；旧页 /workspace/pro/artifacts/streamlines_b15_oroext_t600.html 仍留盘可查）。112 条线（抵达出口 15 / 出域 79 / 滞留 18；对比轴位切 10 / 61 / 36 → 解剖切下**过流更多、滞留更少**，与「切面⊥流向」的物理预期一致）。定量仍以 postProcessing 的 surfaceFieldValue 为准。扩展域口径（03:3x 用户裁定后的域标准）；短域（T-042/T-049，10.294 Pa）已降级历史参考。"
+      "note": "★ 当前口径（2026-10-16 起）：源场 = **T-058 解剖斜切扩展域**（出口帽 126.89 mm² mesh / 125.85 opening、Δp 17.120 Pa、653,789 cells）。**取代** T-057 轴位切产物（出口 112.51 mm²、Δp 18.267 Pa；差 −6.28% 属**切面口径差非修正**；旧页 /pro/artifacts/streamlines_b15_oroext_t600.html 仍留盘可查）。112 条线（抵达出口 15 / 出域 79 / 滞留 18；对比轴位切 10 / 61 / 36 → 解剖切下**过流更多、滞留更少**，与「切面⊥流向」的物理预期一致）。定量仍以 postProcessing 的 surfaceFieldValue 为准。扩展域口径（03:3x 用户裁定后的域标准）；短域（T-042/T-049，10.294 Pa）已降级历史参考。"
     },
     {
       "id": "t064_b01_anat_t600",
       "label": "b01 · 口咽扩展域 · 解剖斜切 · time=600",
-      "url": "/workspace/pro/artifacts/streamlines_b01_anat_t600.html",
-      "lines_url": "/workspace/pro/artifacts/streamlines_b01_anat_t600.lines.json",
+      "url": "/pro/artifacts/streamlines_b01_anat_t600.html",
+      "lines_url": "/pro/artifacts/streamlines_b01_anat_t600.lines.json",
       "case_id": "b01_engineering",
       "domain": "extended（鼻+鼻咽+可见口咽）· 出口 = 解剖斜切⊥局部气道轴",
       "source": "T-064（源场 = T-058 t058_chain_anat/b01，vtkStreamTracer，seed=7，每侧 60 种子；未重跑模拟）",
@@ -27,8 +27,8 @@
     {
       "id": "t064_b02_anat_t600",
       "label": "b02 · 口咽扩展域 · 解剖斜切 · time=600",
-      "url": "/workspace/pro/artifacts/streamlines_b02_anat_t600.html",
-      "lines_url": "/workspace/pro/artifacts/streamlines_b02_anat_t600.lines.json",
+      "url": "/pro/artifacts/streamlines_b02_anat_t600.html",
+      "lines_url": "/pro/artifacts/streamlines_b02_anat_t600.lines.json",
       "case_id": "b02_engineering",
       "domain": "extended（鼻+鼻咽+可见口咽）· 出口 = 解剖斜切⊥局部气道轴",
       "source": "T-064（源场 = T-058 t058_chain_anat/b02，vtkStreamTracer，seed=7，每侧 60 种子；未重跑模拟）",
